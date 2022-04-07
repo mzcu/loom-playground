@@ -1,0 +1,25 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>loom-playground</groupId>
+    <artifactId>structured-concurrency</artifactId>
+    <version>1.0</version>
+    <properties>
+        <maven.compiler.release>19</maven.compiler.release>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <enablePreview>true</enablePreview>j
+                    <compilerArgs>
+                        <compilerArg>--add-modules</compilerArg>
+                        <compilerArg>jdk.incubator.concurrent</compilerArg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
